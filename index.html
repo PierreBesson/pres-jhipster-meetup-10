@@ -1,0 +1,219 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Microservices in practice with JHipster, from dev 💻 to prod 🚀</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css">
+		<link rel="stylesheet" href="css/star.css">
+		<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="node_modules/material-design-icons/iconfont/material-icons.css">
+
+		<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background="#3E8ACC" data-transition="none" data-background-transition="none">
+					<div style="font-family:Pacifico;font-size:100%;">Microservices in practice with JHipster</div>
+					<div style="font-family:Pacifico;font-size:80%;">From <span style="color:orange">dev 💻</span> to <span style="color:red">prod 🚀</span></div>
+					<img src="img/wallpaper.png" style="border:none;box-shadow:none"/>
+					<hr class="star-light" style="line-height:1">
+					<div style="font-family:Pacifico;font-size:70%;">Pierre Besson</div>
+					<div style="font-family:Arial;font-size:40%;">October 4th, 2017 in Paris</div>
+					<img src="img/ippon.png" width="10%" style="border:none;box-shadow:none;background-color:#3e8acc;"/>
+				</section>
+				<section data-background="#3E8ACC" data-transition="none" data-background-transition="none">
+					<div style="font-family:Pacifico;font-size:150%;">Greetings, Java Hipster!</div>
+					<img src="img/wallpaper.png" style="border:none;box-shadow:none"/>
+					<hr class="star-light">
+					<img src="img/ippon.png" width="10%" style="border:none;box-shadow:none;background-color:#3e8acc;"/>
+				</section>
+				<section>
+					<section>
+						<h3>Who am I ?</h3>
+						<hr class="star-primary">
+						<div style="float:left;width:50%;">
+							<img src="img/photo.jpeg" width="180"/>
+							<h3>Pierre Besson</h3>
+							<p><a href="http://twitter.com/pibesson"><i class="fa fa-twitter"></i>
+	@pibesson</a></p>
+							<p><a href="mailto:pbesson@ippon.fr">pbesson@ippon.fr</a></p>
+						</div>
+						<br>
+						<div style="float:right;width:50%;font-size:80%">
+							<ul>
+								<li>Java developer @IpponTech</li>
+								<li>JHipster core team member</li>
+								<li>Favorite technologies:
+									<ul style="list-style-type: none">
+										<li style="text-decoration: line-through #ff0000;">☕ JAVA EE</li>
+										<li>🍃 Spring</li>
+										<li>🐳 Docker</li>
+										<li>☸️ Kubernetes</li>
+									</ul>
+								</li>
+						</div>
+					</section>
+					<section>
+						<img src="img/ippon.png" alt="" style="border:none;box-shadow:none" width="25%">
+						<ul>
+							<li>300 collaborators worldwide (France, USA, Australia)</li>
+							<li>4 cities in France : Paris, Nantes, Lyon, Bordeaux</li>
+							<li>Specialized in Java, Cloud, Big Data</li>
+						</ul>
+						<img src="img/ippon-rooftop.jpg" alt="" width="44%">
+						<img src="img/ippon-devoxx.jpg" alt="" width="51%">
+					</section>
+					<section>
+						<h3>The JHipster team</h3>
+						<a href="https://jhipster.github.io/team/">https://jhipster.github.io/team/</a>
+						<img src="img/jhipster-team.jpg" alt="" width="70%">
+					</section>
+				</section>
+			</section>
+			<section>
+				<h2>JHipster</h2>
+				<hr class="star-primary">
+				<h2>from</h2>
+				<h2 style="color:lightskyblue"> monolith <i class="fa fa-cube"></i></h2>
+				<h2>to</h2>
+				<h2 style="color:orangered">microservices <i class="fa fa-cubes"></i></h2>
+			</section>
+			<section>
+					<section>
+						<h3>JHipster Monolith goals</h3>
+						<hr class="star-primary">
+						<ul>
+							<li>Provide <strong>scaffolding</strong> for a full stack application</li>
+							<li>Based on <strong>modern technologies</strong></li>
+							<li>Maximize development <strong>productivity</strong> with tooling</li>
+							<li><strong>Production ready</strong> (maintainable, secure, scalable)</li>
+							<li><strong>DevOps ready</strong>: provide configuration for docker, CI...</li>
+						</ul>
+					</section>
+					<section>
+						<h3>JHipster Microservice goals</h3>
+						<hr class="star-primary">
+						<ul>
+							<li>Provide <strong>scaffolding</strong> for a full stack application</li>
+							<li>Based on <strong>modern technologies</strong></li>
+							<li>Maximize development <strong>productivity</strong> with tooling</li>
+							<li><strong>Production ready</strong> (maintainable, secure, scalable)</li>
+							<li><strong>DevOps ready</strong>: provide configuration for docker, CI...</li>
+						</ul>
+					</section>
+					<section data-background="#3e8acc">
+						<div class="row no-margin;margin:0px">
+							<div>
+								<h2 class="heading">Client side options</h2>
+								<hr class="star-light">
+							</div>
+						</div>
+						<img src="img/client.png" alt="" style="border:none;box-shadow:none;margin:0px">
+						<img src="img/client-1.png" alt="" style="border:none;box-shadow:none;margin:0px" width="50%">
+					</section>
+					<section data-background="#3e8acc">
+						<div class="row no-margin">
+							<div>
+								<h2 class="heading">Server side options</h2>
+								<hr class="star-light">
+							</div>
+						</div>
+						<img src="img/server.png" alt="" style="border:none;box-shadow:none;width:80%">
+					</section>
+					<section data-background="#3e8acc">
+						<div class="row no-margin">
+							<div>
+								<h2 class="heading">Deployment options</h2>
+								<hr class="star-light">
+							</div>
+						</div>
+						<img src="img/deployment.png" alt="" style="border:none;box-shadow:none;width:80%">
+					</section>
+					<section>
+						<h3>Monolith vs Microservices</h3>
+						<hr class="star-primary">
+						<p>
+						<ul style="list-style-type:none">
+						<li><div><i class="fa fa-cube"></i> Monolith:</div>
+							<ul style="float:right">
+								<li>One application (Back-end + Front-end)</li>
+							</ul>
+						</li>
+						<li><div><i class="fa fa-cubes"></i> Microservice architecture:</div>
+							<ul>
+								<li>Registry</li>
+								<li>API Gateway (proxy + front-end)</li>
+								<li>Microservices (back-end only)</li>
+								<li>(Optional) OAuth2 server UAA,Keycloak...</li>
+							</ul>
+						</li>
+						</ul>
+						</p>
+					</section>
+					<section>
+						<h4>JHipster Microservice Architecture</h4>
+						<img src="img/microservices_architecture_2.png" alt="" style="border:none;box-shadow:none">
+					</section>
+					<section>
+							<div class="row">
+								<div>
+									<h2 class="heading">How do I set up my microservice architecture with JHipster?</h2>
+									<hr class="star-primary">
+								</div>
+							</div>
+							<small style="text-align:left">
+							<p>1) Generate your gateway and microservices apps</p>
+							<p>2) Start the JHipster registry</p>
+								<code>docker-compose -f src/main/docker/jhipster-registry.yml</code>							
+							<p>3) Start your microservices (<code>./mvnw</code> or <code>./gradlew</code>)</p>
+							<p>4) Enjoy</p>
+							</small>
+							</section>
+				</section>
+				<section>
+					<h2>Questions ?</h2>
+<br>
+					<p><a href="http://twitter.com/pibesson"><i class="fa fa-twitter"></i>
+@pibesson</a></p>
+					<p><a href="https://github.com/PierreBesson"><i class="fa fa-github"></i> PierreBesson</a></p>
+					<p><a href="mailto:pbesson@ippon.fr"><i class="fa fa-envelope"></i> pbesson@ippon.fr</a></p>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+				controls: false,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
