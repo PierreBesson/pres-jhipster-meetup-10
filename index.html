@@ -97,96 +97,191 @@
 			</section>
 			<section>
 					<section>
-						<h3>JHipster Monolith goals</h3>
+						<h2>Introducting Microservices</h2>
+						<div style="font-size: 200%;color:greenyellow"><i class="fa fa-cloud"></i></div>
+						<h4>Why microservices ?</h4>
+						<h4>JHipster goals</h4>
+						<h4>Extending JHipster for microservices</h4>
+						<h4>Monolith vs Microservices</h4>
+					</section>
+					<section>
+						<h3>Why microservices</h3>
+						<br>
 						<hr class="star-primary">
-						<ul>
-							<li>Provide <strong>scaffolding</strong> for a full stack application</li>
-							<li>Based on <strong>modern technologies</strong></li>
-							<li>Maximize development <strong>productivity</strong> with tooling</li>
-							<li><strong>Production ready</strong> (maintainable, secure, scalable)</li>
-							<li><strong>DevOps ready</strong>: provide configuration for docker, CI...</li>
+					</section>
+					<section>
+						<h3>Microservices patterns</h3>
+						<img src="img/PatternsRelatedToMicroservices.jpg" width="85%">
+						<a style="font-size: 50%" href="http://microservices.io/patterns/microservices.html">microservices.io/patterns/microservices.html</a>
+					</section>		
+					<section>
+						<h3>JHipster goals</h3>
+						<div style="font-size: 200%;color:lightskyblue"><i class="fa fa-cube"></i></div>
+						<br>
+						<hr class="star-primary">
+						<ul style="font-size: 90%;list-style-type: none;">
+							<li class="fragment">🏗️ Provide <strong>scaffolding</strong> for a full stack application</li>
+							<li class="fragment">💠 Based on <strong>modern technologies</strong></li>
+							<li class="fragment">🔧 Maximize development <strong>productivity</strong> with tooling</li>
+							<li class="fragment">📈 <strong>Production ready</strong> (maintainable, secure, scalable)</li>
+							<!--<li><strong>DevOps ready</strong>: provide configuration for docker, CI...</li>-->
 						</ul>
 					</section>
 					<section>
-						<h3>JHipster Microservice goals</h3>
+						<h3>Extending JHipster for a microservice architecture</h3>
+						<div style="font-size: 200%;color:orangered"><i class="fa fa-cubes"></i></div>
 						<hr class="star-primary">
-						<ul>
-							<li>Provide <strong>scaffolding</strong> for a full stack application</li>
-							<li>Based on <strong>modern technologies</strong></li>
-							<li>Maximize development <strong>productivity</strong> with tooling</li>
-							<li><strong>Production ready</strong> (maintainable, secure, scalable)</li>
-							<li><strong>DevOps ready</strong>: provide configuration for docker, CI...</li>
+						<ul style="font-size: 80%;list-style-type: none;">
+							<li class="fragment">🏗️ Generate several <strong>independent</strong> microservices and front-ends</li>
+							<li class="fragment"><i class="fa fa-terminal"></i>️ ️Work out of the box in dev and in prod !</li>
+							<li class="fragment"><i class="fa fa-cloud"></i> Configure service discovery and centralized configuration</li>
+							<li class="fragment">🔒Provide a distributed security solution</li>
+							<li class="fragment"><i class="fa fa-rocket"></i> Be <strong>DevOps ready</strong>: provide configuration for docker, CI-CD, ...</li>
+							<li class="fragment"><i class="fa fa-desktop"></i> Have visibility on your microservices (service listing, API documentation)</li>
+							<li class="fragment"><i class="fa fa-tachometer"></i> Offer a <strong>Monitoring</strong> solution to manage production</li>
 						</ul>
-					</section>
-					<section data-background="#3e8acc">
-						<div class="row no-margin;margin:0px">
-							<div>
-								<h2 class="heading">Client side options</h2>
-								<hr class="star-light">
-							</div>
-						</div>
-						<img src="img/client.png" alt="" style="border:none;box-shadow:none;margin:0px">
-						<img src="img/client-1.png" alt="" style="border:none;box-shadow:none;margin:0px" width="50%">
-					</section>
-					<section data-background="#3e8acc">
-						<div class="row no-margin">
-							<div>
-								<h2 class="heading">Server side options</h2>
-								<hr class="star-light">
-							</div>
-						</div>
-						<img src="img/server.png" alt="" style="border:none;box-shadow:none;width:80%">
-					</section>
-					<section data-background="#3e8acc">
-						<div class="row no-margin">
-							<div>
-								<h2 class="heading">Deployment options</h2>
-								<hr class="star-light">
-							</div>
-						</div>
-						<img src="img/deployment.png" alt="" style="border:none;box-shadow:none;width:80%">
 					</section>
 					<section>
 						<h3>Monolith vs Microservices</h3>
 						<hr class="star-primary">
 						<p>
 						<ul style="list-style-type:none">
-						<li><div><i class="fa fa-cube"></i> Monolith:</div>
+						<li class="fragment"><div><i class="fa fa-cube"></i> Monolith:</div>
 							<ul style="float:right">
 								<li>One application (Back-end + Front-end)</li>
 							</ul>
 						</li>
-						<li><div><i class="fa fa-cubes"></i> Microservice architecture:</div>
-							<ul>
-								<li>Registry</li>
-								<li>API Gateway (proxy + front-end)</li>
-								<li>Microservices (back-end only)</li>
-								<li>(Optional) OAuth2 server UAA,Keycloak...</li>
+						<li class="fragment"><div><i class="fa fa-cubes"></i> Microservice architecture:</div>
+							<ul style="float:right">
+								<li class="fragment">Registry</li>
+								<li class="fragment">API Gateway (proxy + front-end)</li>
+								<li class="fragment">Microservices (back-end only)</li>
+								<li class="fragment">(Optional) OAuth2 server: UAA, Keycloak</li>
 							</ul>
 						</li>
 						</ul>
 						</p>
 					</section>
+			</section>
+			<section>
+					<section>
+						<h2>JHipster as a microservice platform</h2>
+						<div style="font-size: 200%;color: gold"><i class="fa fa-fort-awesome"></i></div>
+					</section>
+					<section>
+						<h3>Technologies used by JHipster Microservice</h3>
+						<hr class="star-primary">
+						<div>Rely on Spring Boot and Spring Cloud abstractions to implement microservice patterns:</div>
+							<ul>
+								<li>Service discovery: Eureka/Consul</li>
+								<li>Centralized configuration: Spring Cloud Config</li>
+								<li>API Gateway: Zuul</li>
+								<li>Client side load balancing: Ribbon</li>
+								<li>Circuit Breaker: Hystrix</li>
+							</ul>
+							<div>Fill in the gaps from an Hello World demo to a production ready microservice</div>
+					</section>
+					<section>
+						<h3>The JHipster Microservice Stack</h3>
+						<hr class="star-primary">
+						<div>Provide essential tools to manage a microservice architecture :</div>
+							<ul>
+								<li>JHipster Registry : UI over Eureka, Consul and actuator endpoints</li>
+								<li>JHipster Gateway: pre-configured Zuul service with ready to use prod features</li>
+								<li>CI-CD Configuration: get a working deployment pipeline working out of the box</li>
+								<li>Deployment and integration: generate déployment files for Docker, Kubernetes, Heroku, Rancher, Openshift, Cloud Foundry</li>
+								<li>JHipster Console: log, metrics and traces collected in Elasticsearch, visualized with Kibana and Zipkin</li>
+							</ul>
+					</section>
 					<section>
 						<h4>JHipster Microservice Architecture</h4>
 						<img src="img/microservices_architecture_2.png" alt="" style="border:none;box-shadow:none">
 					</section>
-					<section>
-							<div class="row">
-								<div>
-									<h2 class="heading">How do I set up my microservice architecture with JHipster?</h2>
-									<hr class="star-primary">
-								</div>
-							</div>
-							<small style="text-align:left">
-							<p>1) Generate your gateway and microservices apps</p>
-							<p>2) Start the JHipster registry</p>
-								<code>docker-compose -f src/main/docker/jhipster-registry.yml</code>							
-							<p>3) Start your microservices (<code>./mvnw</code> or <code>./gradlew</code>)</p>
-							<p>4) Enjoy</p>
-							</small>
-							</section>
 				</section>
+				<section>
+					<h2>Show time</h2>
+					<span style="color:red;font-size:300%">🎆</span>	
+				</section>
+				<section>
+					<h2>Let's go to production </h2>
+					<span style="color:red;font-size:300%">🚀</span>	
+				</section>
+				<section>
+					<section>
+						<h2>Introduction to microservice monitoring</h2>
+						<span style="color:red;font-size:300%"><i class="fa fa-tachometer"></i></span>	
+					</section>
+					<section>
+						<h3>The problems</h3>
+						<hr class="star-primary">
+						<div style="font-size:80%">
+							<ul>
+								<li class="fragment"><i class="fa fa-chain-broken"></i> Distributed system -> More points of failure</li>
+								<li class="fragment"><i class="fa fa-files-o"></i> Logs are dispersed in many many logfiles</li>
+								<li class="fragment"><i class="fa fa-search"></i> Hard to locate the microservice that caused a problem</li>
+								<li class="fragment"><i class="fa fa-link"></i> Hard to follow the chain of requests</li><!--As the interractions in the system grows,  -->
+								<li class="fragment">🐇/🐢 Studying latency is hard</li>
+								<li class="fragment">💂 Resiliency mechanism are hard to configure properly</li><!-- they can even obstruct you from troubleshoting your system -->
+							</ul>
+						</div>
+					</section>
+					<section>
+						<h3>The solution</h3>
+						<h4>Comprehensive monitoring</h4>
+						<hr class="star-primary">
+						<div style="font-size:80%">
+						<div class="text-center">
+									<ul style="list-style-type:none">
+										<li class="fragment"><i class="fa fa-file-text-o"></i> Logs  : discrete event</li>
+										<li class="fragment"><i class="fa fa-line-chart"></i>Metrics : numerical values (business or technical)</li><!--  collected by code instrumentation(ex: timer, gauge, counter)-->
+										<li class="fragment"><i class="fa fa-link"></i> Traces : chains of calls in the system (spans)</li><!--follow chain calls with by collecting requests informations with a correlation ID -> tracing -->
+									</ul>
+							</ul>
+						</div>
+						<br>
+							<div>
+							<ul style="list-style-type:none">
+								<li class="fragment"><i class="fa fa-database"></i> Store everything in one place, with proper metadata</li>
+								<li class="fragment"><i class="fa fa-search"></i> Use a search engine to query and aggregate monitoring data</li>
+								<li class="fragment"><i class="fa fa-pie-chart"></i> Visualize using graphs, build dashboards</li>
+								<li class="fragment"><i class="fa fa-compass"></i> Be able to navigate around<!--, switch from global view to more specialized view--></li>
+								<li class="fragment"><i class="fa fa-exclamation-triangle"></i> Create alerts</li>
+							</div>
+							</div>
+					</section>
+					<section data-transition="none">
+						<h3>The 3 ways of observability</h3>
+						<hr class="star-primary">
+							<img src="img/3ways.png" style="border:none;box-shadow:none;">
+							<div><a style="font-size:50%" href="https://peter.bourgon.org/blog/2017/02/21/metrics-tracing-and-logging.html">https://peter.bourgon.org/blog/2017/02/21/metrics-tracing-and-logging.html</a></div>
+					</section>
+					<section data-transition="none">
+						<h3>The 3 ways of observability</h3>
+						<hr class="star-primary">
+						<img src="img/3ways-detailed.png" style="border:none;box-shadow:none;">
+						<div><a style="font-size:50%" href="https://peter.bourgon.org/blog/2017/02/21/metrics-tracing-and-logging.html">https://peter.bourgon.org/blog/2017/02/21/metrics-tracing-and-logging.html</a></div>
+					</section>
+					<section>
+						<h3>The JHipster Console</h3>
+						<hr class="star-primary">
+						<div style="font-size:80%">
+							<a href="http://www.jhipster.tech/monitoring/">www.jhipster.tech/monitoring/</a>
+							<ul>
+								<li class="fragment"><i class="fa fa-chain-broken"></i> Distributed system -> More points of failure</li>
+								<li class="fragment"><i class="fa fa-files-o"></i> Logs are dispersed in many many logfiles</li>
+								<li class="fragment"><i class="fa fa-search"></i> Hard to locate the microservice that caused a problem</li>
+								<li class="fragment"><i class="fa fa-link"></i> Hard to follow the chain of requests</li><!--As the interractions in the system grows,  -->
+								<li class="fragment">🐇/🐢 Studying latency is hard</li>
+								<li class="fragment">💂 Resiliency mechanism are hard to configure properly</li><!-- they can even obstruct you from troubleshoting your system -->
+							</ul>
+						</div>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>JHipster Console demo</h2>
+						<span style="color:red;font-size:300%"><i class="fa fa-magic"></i></span>
+					</section>
 				<section>
 					<h2>Questions ?</h2>
 <br>
