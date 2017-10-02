@@ -9,8 +9,8 @@
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/white.css">
 		<link rel="stylesheet" href="css/star.css">
-		<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
-		<link rel="stylesheet" href="node_modules/material-design-icons/iconfont/material-icons.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/material-icons.css">
 
 		<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
 
@@ -143,9 +143,9 @@
 							<li class="fragment">🏗️ Generate several <strong>independent</strong> microservices and front-ends</li>
 							<li class="fragment"><i class="fa fa-terminal"></i>️ ️Work out of the box in dev and in prod !</li>
 							<li class="fragment"><i class="fa fa-cloud"></i> Configure service discovery and centralized configuration</li>
-							<li class="fragment">🔒Provide a distributed security solution</li>
+							<li class="fragment">🔒Provide a distributed <strong>security</strong> solution</li>
 							<li class="fragment"><i class="fa fa-rocket"></i> Be <strong>DevOps ready</strong>: provide configuration for docker, CI-CD, ...</li>
-							<li class="fragment"><i class="fa fa-desktop"></i> Have visibility on your microservices (service listing, API documentation)</li>
+							<li class="fragment"><i class="fa fa-desktop"></i> Provide <strong>management dashboards</strong></li><!-- service listing, api documentation -->
 							<li class="fragment"><i class="fa fa-tachometer"></i> Offer a <strong>Monitoring</strong> solution to manage production</li>
 						</ul>
 					</section>
@@ -186,14 +186,14 @@
 					<section>
 						<h3>The JHipster Microservice Stack</h3>
 						<hr class="star-primary">
-						<div style="font-size:80%">Provide essential tools to manage a microservice architecture :</div>
+						<div style="font-size:80%">Added value added over Spring Cloud integrations :</div>
 						<br>
 							<ul style="font-size: 70%;list-style-type:none">
-								<li class="fragment"><i class="fa fa-cloud"></i> JHipster Registry : Eureka + Config server + Management</li>
-								<li class="fragment">⛩️ JHipster Gateway: API management with Zuul and swagger docs</li>
-								<li class="fragment">🔁 CI-CD Configuration: Pipelines for Jenkins 🤵, Travis 👷</li>
-								<li class="fragment">🚀 Deployments: Docker 🐋, Kubernetes ☸️, Rancher 🐄, ...</li>
-								<li class="fragment"><i class="fa fa-tachometer"></i> JHipster Console: logs + metrics + traces in one place (based on ELK and Zipkin)</li>
+								<li class="fragment"><i class="fa fa-cloud"></i> <strong>JHipster Registry</strong>: Eureka + Config server + Management</li>
+								<li class="fragment">⛩️ <strong>JHipster Gateway</strong>: API management with Zuul and swagger docs</li>
+								<li class="fragment">🔁 <strong>CI-CD Configuration</strong>: Pipelines for Jenkins 🤵, Travis 👷</li>
+								<li class="fragment">🚀 <strong>Deployments</strong>: Docker 🐋, Kubernetes ☸️, Rancher 🐄</li>
+								<li class="fragment"><i class="fa fa-tachometer"></i> <strong>JHipster Console</strong>: logs + metrics + traces (based on ELK and Zipkin)</li>
 							</ul>
 					</section>
 					<section>
@@ -205,7 +205,7 @@
 				<section>
 					<h2>Show time</h2>
 					<span style="color:red;font-size:300%">🎆</span>
-					<h4 style="font-size:70%">Using JHipster to developping microservices</h4>
+					<h4 style="font-size:70%">Using JHipster to develop microservices</h4>
 					<h4 style="font-size:70%">Running the full architecure with docker</h4>
 				</section>
 				<section>
@@ -227,7 +227,7 @@
 						<div style="font-size:80%">
 							<ul>
 								<li class="fragment"><i class="fa fa-chain-broken"></i> Distributed system -> More points of failure</li>
-								<li class="fragment"><i class="fa fa-files-o"></i> Logs are dispersed in many many logfiles</li>
+								<li class="fragment"><i class="fa fa-files-o"></i> Logs are dispersed in many many log files</li>
 								<li class="fragment"><i class="fa fa-search"></i> Hard to locate the microservice that caused a problem</li>
 								<li class="fragment"><i class="fa fa-link"></i> Hard to follow the chain of requests</li><!--As the interractions in the system grows,  -->
 								<li class="fragment">🐇/🐢 Studying latency is hard</li>
@@ -253,11 +253,11 @@
 							<ul style="list-style-type:none">
 								<li class="fragment"><i class="fa fa-database"></i> Store everything in one place, with proper metadata</li>
 								<li class="fragment"><i class="fa fa-search"></i> Use a search engine to query and aggregate monitoring data</li>
-								<li class="fragment"><i class="fa fa-pie-chart"></i> Visualize using graphs, build dashboards</li>
-								<li class="fragment"><i class="fa fa-compass"></i> Be able to navigate around<!--, switch from global view to more specialized view--></li>
+								<li class="fragment"><i class="fa fa-area-chart"></i> <i class="fa fa-bar-chart"></i> <i class="fa fa-pie-chart"></i> Visualize using graphs, build dashboards</li></li>
+								<li class="fragment"><i class="fa fa-compass"></i> Navigate around<!--, switch from global view to more specialized view--></li>
 								<li class="fragment"><i class="fa fa-exclamation-triangle"></i> Create alerts</li>
 							</div>
-							</div>
+						</div>
 					</section>
 					<section data-transition="none">
 						<h3>The 3 ways of observability</h3>
@@ -277,12 +277,11 @@
 						<div style="font-size:80%">
 							<a href="http://www.jhipster.tech/monitoring/">www.jhipster.tech/monitoring/</a>
 							<ul>
-								<li class="fragment"><i class="fa fa-chain-broken"></i> Distributed system -> More points of failure</li>
-								<li class="fragment"><i class="fa fa-files-o"></i> Logs are dispersed in many many logfiles</li>
-								<li class="fragment"><i class="fa fa-search"></i> Hard to locate the microservice that caused a problem</li>
-								<li class="fragment"><i class="fa fa-link"></i> Hard to follow the chain of requests</li><!--As the interractions in the system grows,  -->
-								<li class="fragment">🐇/🐢 Studying latency is hard</li>
-								<li class="fragment">💂 Resiliency mechanism are hard to configure properly</li><!-- they can even obstruct you from troubleshoting your system -->
+								<li class="fragment">Setup ELK (Elasticsearch, Logstash, Kibana) + Zipkin in docker</li>
+								<li class="fragment">Enable reporting from any JHipster apps with a few properties</li>
+								<li class="fragment">Logs + metrics forwarded with <em>logback-logstash-encoder</em></li>
+								<li class="fragment">Traces are forwarded to Zipkin using <em>Spring Cloud Sleuth</em></li>
+								<li class="fragment">All data is stored in Elasticseach for a certain number of days (Curator)</li>
 							</ul>
 						</div>
 					</section>
